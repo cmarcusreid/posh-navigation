@@ -1,0 +1,40 @@
+{
+    "Enlistments":
+    [
+        {
+            "Alias": "1",
+            "ProjectsTemplate": "mario",
+            "Root": "E:\\ws\\1"
+        },
+        {
+            "Alias": "2",
+            "ProjectsTemplate": "mario",
+            "Root": "E:\\ws\\2"
+        },
+        {
+            "Alias": "e",
+            "Root": "D:\\environment"
+        },
+        {
+            "Alias": "ta",
+            "Root": "D:\\text-adventure"
+        }
+    ],
+    "ProjectsTemplates":
+    [
+        {
+            "Name": "mario",
+            "Projects":
+            [
+                {
+                    "Alias": "k",
+                    "Root": "\\Products\\Kart"
+                },
+                {
+                    "Alias": "p",
+                    "Root": "\\Products\\Party"
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 $scriptDirectory = Split-Path $MyInvocation.MyCommand.Path -Parent
 Import-Module "$scriptDirectory\PoshNavigation.psm1"
+$configPath = Add-SampleConfiguration
 
 if(-not (Test-Path $PROFILE))
 {
@@ -36,7 +37,7 @@ Write-Host -ForegroundColor Green "Adding posh-navigation to profile."
 @"
 
 # Import posh-navigation
-$profileLine
+$profileLine -ArgumentList '$configPath'
 
 "@ | Out-File $PROFILE -Append -Encoding (Get-FileEncoding $PROFILE)
 
