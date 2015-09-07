@@ -21,8 +21,8 @@ function Add-SampleConfiguration
         $samplesPath = Get-SamplesPath
         $sampleFilePath = Join-Path $samplesPath "SampleConfig.json"
         Write-Host -ForegroundColor Green "Creating sample config file at ""$configFilePath""."
-        New-Item $configFilePath -Force -Type File -ErrorAction Stop
-        Copy-Item $sampleFilePath $configFilePath -Force -ErrorAction Stop
+        New-Item $configFilePath -Force -Type File -ErrorAction Stop | Out-Null
+        Copy-Item $sampleFilePath $configFilePath -Force -ErrorAction Stop | Out-Null
     }
 
     return $configFilePath
