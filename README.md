@@ -45,14 +45,16 @@ posh-navigation will automatically create a sample JSON configuration file and a
 
 1. Launch PowerShell and navigate to posh-navigation's root.
 2. Run Install.ps1.
-3. Call ". $profile" to reload PowerShell with customizations.
+3. Reload your shell or call ". $profile" to reload PowerShell with posh-navigation.
+
+After installation you can customize your environment by modifying the JSON configuration file. 
 
 	PS C:\Repositories\posh-navigation> .\install.ps1
 	Creating sample config file at "C:\repositories\posh-navigation\bin\machineName.json".
 	Adding posh-navigation to profile.
 	posh-navigation successfully installed!
 	Please reload your profile for the changes to take effect:
-	    . $PROFILE
+		. $PROFILE
 
 ## Configuration
 
